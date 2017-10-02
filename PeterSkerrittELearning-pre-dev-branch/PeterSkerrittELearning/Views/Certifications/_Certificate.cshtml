@@ -1,0 +1,203 @@
+﻿@model  PeterSkerrittELearning.Models.ManageCertificateViewModel
+
+<!-- Page length options -->
+<div class="panel panel-flat">
+    <div>
+        <button type="button" class="btn btn-dark pull-right" data-toggle="modal" data-target="#myModal">Add <i class="fa fa-plus"></i></button>
+    </div>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th class="text-center"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Certificates)
+            {
+
+                <tr>
+                    <td onclick="CertRowClick(@item.Id);">@item.Name</td>
+                    <td onclick="CertRowClick(@item.Id);">@item.Description</td>
+                    <td style="text-align:right">
+                       <button onclick="CertificateEditClick(@item.Id);" type="button" class="btn btn-default"><i class="fa fa-pencil"></i></button>
+                       <button onclick="CertDelClick(@item.Id);" type="button" class="btn btn-lightdark"><i class="fa fa-trash"></i></button>
+                       
+                        @*<button onclick="return confirm('Are you sure you want to deactivate this certificate?'); CertDelClick(@item.Id);"  type="button" class="btn btn-lightdark"><i class="fa fa-trash"></i></button>*@
+                        
+                       
+                        
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- /basic setup -->
+<!-- Trigger the modal with a button -->
+
+<style>
+    .modal-dialog {
+        left: 0% !important;
+    }
+</style>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Certificates</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input id="txtName" type="text" class="form-control" required placeholder="Name" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea id="txtDesc" type="text" style="height:200px" class="form-control" required placeholder="Description"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button onclick="CertSaveClick();" type="button" class="btn btn-dark" data-dismiss="modal">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /page length options -->
+
+<script>
+
+    var CertNo = 0;
+
+    function CertificateEditClick(Id) {
+        CertNo = Id;
+
+        $.ajax({
+                type: "POST",
+                url: '@Url.Action("GetCertification", "Certifications")',
+                data: { "Id" : Id},
+                success: function (data) {
+                    var obj = JSON.parse(data)
+
+                    $('#txtName').val(obj.Name)
+                    $('#txtDesc').val(obj.Description)
+
+                    $("#myModal").modal('show')
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            });
+    }
+
+        function CertDelClick(Id) {
+
+            var Delobj = {
+                "Id": Id,
+
+            };
+            
+                $.ajax({
+                type: "POST",
+                url: '@Url.Action("DeleteCertificate", "Certifications")',
+                data: Delobj,
+                success: function () {
+                    console.log('Success');
+                    var DBCall = '?v=' + Math.random();
+                    $('#CertificatesStep').load("/Certifications/_Certificate" + DBCall);
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            });
+            
+
+        }
+
+        function CertRowClick(Id) {
+
+            var obj = {
+                "Id": Id,
+
+            };
+
+            //$('.stepy-step').find('.button-next').trigger('click');
+
+            var buttons = $('#CertificatesStep').closest('fieldset').find('.stepy-navigator');
+
+            if (buttons.length) {
+
+                var next = buttons.children('.button-next');
+
+                if (next.length) {
+                    next.click();
+                } else if (self.finish) {
+                    self.finish.click();
+                }
+            }
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("LoadAssessmentByCertification", "Certifications")',
+                data: obj,
+                success: function () {
+                    console.log('Success Click Cert');
+                    var DBCall = '&v=' + Math.random();
+                    $('#AssessmentsStep').load("/Certifications/_Assessment?Id=" + obj.Id + DBCall);
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            });
+        }
+
+        function CertSaveClick() {
+            try {
+
+                var obj = {
+                    "Id": CertNo,
+                    "Name": $('#txtName').val(),
+                    "Description": $('#txtDesc').val()
+                };
+
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("SaveCertificate", "Certifications")',
+                    data: obj,
+                    success: function () {
+
+                        var DBCall = '?v=' + Math.random();
+                        $('#CertificatesStep').load("/Certifications/_Certificate" + DBCall);
+
+                        CertNo = 0;
+                    },
+                    error: function (err) {
+                        console.log(err);
+                    }
+                });
+
+            } catch (e) {
+                console.log(e);
+            }
+
+        }
+</script>

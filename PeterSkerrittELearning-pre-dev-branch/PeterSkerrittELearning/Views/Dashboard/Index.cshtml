@@ -1,0 +1,97 @@
+﻿@{
+    ViewBag.Title = "Admin Dashboard";
+}
+
+<link href="~/Content/Dashboard.css" rel="stylesheet" />
+
+<!-- Begin container -->
+<div class='dashboard-container'>
+    <div class='container_inner'>
+        <div class='tiles' style="margin-right: 150px !important">
+            <div class='tiles_tile' onclick="Navigate('Certifcates')">
+                <div class='tiles_tile__front'>
+                    <h1>
+                        <i class="fa fa-certificate"></i>
+                        Manage Certifications
+                    </h1>
+                    <p>Manage The Certifications</p>
+                </div>
+                <div class='tiles_tile__back'>
+                    <i class="fa fa-certificate"></i>
+                </div>
+                <div class='tiles_tile__left'></div>
+                <div class='tiles_tile__right'></div>
+                <div class='tiles_tile__top'></div>
+                <div class='tiles_tile__bottom'></div>
+            </div>
+            <div class='tiles_tile' onclick="Navigate('Login')">
+                <div class='tiles_tile__front'>
+                    <h1>
+                        <i class="fa fa-pencil-square-o"></i>
+                        Add User
+                    </h1>
+                    <p>Add students and admin users</p>
+                </div>
+                <div class='tiles_tile__back'>
+                    <i class="fa fa-pencil-square-o"></i>
+                </div>
+                <div class='tiles_tile__left'></div>
+                <div class='tiles_tile__right'></div>
+                <div class='tiles_tile__top'></div>
+                <div class='tiles_tile__bottom'></div>
+            </div>
+            <div class='tiles_tile' onclick="Navigate('Search')">
+                <div class='tiles_tile__front'>
+                    <h1>
+                        <i class="fa fa-search"></i>
+                        Search Students
+                    </h1>
+                    <p>Search For Registered Students</p>
+                </div>
+                <div class='tiles_tile__back'>
+                    <i class="fa fa-search"></i>
+                </div>
+                <div class='tiles_tile__left'></div>
+                <div class='tiles_tile__right'></div>
+                <div class='tiles_tile__top'></div>
+                <div class='tiles_tile__bottom'></div>
+            </div>
+            <div class='tiles_tile' onclick="Navigate('SiteText')">
+                <div class='tiles_tile__front'>
+                    <h1>
+                        <i class="fa fa-align-justify"></i>
+                        Manage Site Text
+                    </h1>
+                    <p>Manage the text on the site</p>
+                </div>
+                <div class='tiles_tile__back'>
+                    <i class="fa fa-align-justify"></i>
+                </div>
+                <div class='tiles_tile__left'></div>
+                <div class='tiles_tile__right'></div>
+                <div class='tiles_tile__top'></div>
+                <div class='tiles_tile__bottom'></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        function Navigate(Type)
+        {
+            if (Type == "Certifcates") {
+                window.location = "@Url.Action("ManageCertifications", "Certifications")";
+            }
+            else if (Type == "Login") {
+                window.location = "@Url.Action("Register", "Account")";
+            }
+            else if (Type == "Search") {
+                window.location = "@Url.Action("ManageStudents", "AdminMenu")";
+            }
+            else if (Type == "SiteText") {
+                window.location = "@Url.Action("ManageText", "SiteText")";
+            }
+        }
+    </script>
+}

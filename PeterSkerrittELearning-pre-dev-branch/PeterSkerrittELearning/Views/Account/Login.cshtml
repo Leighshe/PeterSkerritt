@@ -1,0 +1,65 @@
+﻿@using PeterSkerrittELearning.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Log in";
+    Layout = "~/Views/Shared/_NotLoggedInLayout.cshtml";
+}
+
+<div class="page-container">
+
+    <!-- Page content -->
+    <div class="page-content">
+
+        <!-- Main content -->
+        <div class="content-wrapper">
+
+            <!-- Content area -->
+            <div class="content">
+
+                <!-- Simple login form -->
+               using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="panel panel-body login-form" style="border-color: #222222">
+                        <div class="text-center">
+                            <img src="~/assets/images/PSLogo.png">
+                            <h5 class="content-group">Login to your account <small class="display-block">Enter your credentials below</small></h5>
+                        </div>
+
+                        <div class="form-group has-feedback has-feedback-left">
+                            @Html.TextBoxFor(m => m.Username, new { @class = "form-control", placeholder = "Username" })
+                            @*<input type="text" class="form-control" placeholder="Email">*@
+                            <div class="form-control-feedback">
+                                <i class="fa fa-user-o text-muted"></i>
+                            </div>
+                            @Html.ValidationMessageFor(m => m.Username, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="form-group has-feedback has-feedback-left">
+                            @*<input type="text" class="form-control" placeholder="Password">*@
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Password" })
+                            <div class="form-control-feedback">
+                                <i class="fa fa-lock text-muted"></i>
+                            </div>
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                        </div>
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-block" style="background-color: #222222; color: #fff;">Sign in <i class="fa fa-sign-in position-right"></i></button>
+                        </div>
+                    </div>
+                }
+                <!-- /simple login form -->
+            </div>
+            <!-- /content area -->
+        </div>
+        <!-- /main content -->
+    </div>
+    <!-- /page content -->
+</div>
+<!-- /page container -->
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

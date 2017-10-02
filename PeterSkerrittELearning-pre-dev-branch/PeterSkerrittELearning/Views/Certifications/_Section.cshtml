@@ -1,0 +1,206 @@
+﻿@model  PeterSkerrittELearning.Models.ManageCertificateViewModel
+
+<!-- Page length options -->
+<div class="panel panel-flat">
+    <div>
+        <button type="button" class="btn btn-dark pull-right" data-toggle="modal" data-target="#myModalSec">Add <i class="fa fa-plus"></i></button>
+    </div>
+
+    <table class="table  table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th class="text-center"></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @if (Model.Sections != null)
+            {
+                foreach (var item in Model.Sections)
+                {
+
+                    <tr>
+                        <td onclick="SecRowClick(@item.Id);">@item.Name</td>
+                        <td onclick="SecRowClick(@item.Id);">@item.Description</td>
+                        <td style="text-align:right">
+                            <button onclick="SectionEditClick(@item.Id);" type="button" class="btn btn-default"><i class="fa fa-pencil"></i></button>
+                            <button onclick="SecDelClick(@item.Id);" type="button" class="btn btn-lightdark"><i class="fa fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- /basic setup -->
+<!-- Trigger the modal with a button -->
+
+<style>
+    .modal-dialog {
+        left: 0% !important;
+    }
+</style>
+
+<!-- Modal -->
+<div id="myModalSec" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Sections</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input id="txtSecName" type="text" class="form-control" required placeholder="Name" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea id="txtSecDesc" type="text" style="height:200px" class="form-control" required placeholder="Description"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button onclick="SecSaveClick();" type="button" class="btn btn-dark" data-dismiss="modal">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /page length options -->
+
+<script>
+    var SecNo = 0;
+
+    function SectionEditClick(Id) {
+
+        SecNo = Id;
+
+        $.ajax({
+                type: "POST",
+                url: '@Url.Action("GetSection", "Certifications")',
+                data: { "Id" : Id},
+                success: function (data) {
+                    var obj = JSON.parse(data)
+
+                    $('#txtSecName').val(obj.Name)
+                    $('#txtSecDesc').val(obj.Description)
+
+                    $("#myModalSec").modal('show')
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            });
+    }
+
+    function SecDelClick(Id) {
+
+            var Delobj = {
+                "Id": Id,
+                "ModuleId": @Model.wizardIds.ModuleId
+            };
+
+            
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("DeleteSection", "Certifications")',
+                    data: Delobj,
+                    success: function () {
+                        console.log('Delete Success');
+                        console.log(Delobj);
+                        var DBCall = '&v=' + Math.random();
+                        $('#SectionsStep').load("/Certifications/_Section?Id=" + Delobj.ModuleId + DBCall);
+                    },
+                    error: function (err) {
+                        console.log(err);
+                    }
+                });
+            
+        }
+
+    function SecRowClick(Id) {
+
+            var obj = {
+                "Id": Id,
+                "ModuleId": @Model.wizardIds.ModuleId
+            };
+
+            var buttons = $('#SectionsStep').closest('fieldset').find('.stepy-navigator');
+            console.log(buttons.length);
+            if (buttons.length) {
+
+                var next = buttons.children('.button-next');
+
+                if (next.length) {
+                    next.click();
+                } else if (self.finish) {
+                    self.finish.click();
+                }
+            }
+
+              $.ajax({
+                type: "POST",
+                url: '@Url.Action("LoadQuestionBySections", "Certifications")',
+                data: obj,
+                success: function () {
+                    console.log('Success Click Cert');
+                    var DBCall = '&v=' + Math.random();
+                    $('#QuestionsStep').load("/Certifications/_Question?Id=" + obj.Id + DBCall);
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            });
+
+        }
+
+        function SecSaveClick() {
+            try {
+
+                var obj = {
+                    "Id": SecNo,
+                    "Name": $('#txtSecName').val(),
+                    "Description": $('#txtSecDesc').val(),
+                    "ModuleId": @Model.wizardIds.ModuleId
+
+                };
+
+                console.log(obj);
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("SaveSection", "Certifications")',
+                    data: obj,
+                    success: function () {
+
+                        var DBCall = '&v=' + Math.random();
+                        $('#SectionsStep').load("/Certifications/_Section?Id=" + obj.ModuleId + DBCall);
+                        console.log('Add Section Success')
+
+                        SecNo = 0;
+                    },
+                    error: function (err) {
+                        console.log(err);
+                    }
+                });
+
+            } catch (e) {
+                console.log(e);
+            }
+
+        }
+</script>

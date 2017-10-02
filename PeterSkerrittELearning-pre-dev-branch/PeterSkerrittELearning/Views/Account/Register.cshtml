@@ -1,0 +1,472 @@
+﻿@model PeterSkerrittELearning.Models.GlobalRegisterViewModel
+
+@{
+    ViewBag.Title = "Add User";
+}
+
+@Styles.Render("~/Content/css")
+@Styles.Render("~/Content/core")
+
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/jqueryval")
+
+<style>
+    .btn-labeled > b {
+        background-color: rgba(80, 80, 80, 0.9)
+    }
+</style>
+
+@*<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>*@
+
+<div class="login-container">
+
+    <div class="page-container">
+
+        <!-- Page content -->
+        <div class="page-content">
+
+            <!-- Main content -->
+            <div class="content-wrapper">
+
+                <!-- Content area -->
+                <div class="content">
+
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="panel panel-flat">
+                                <div class="panel-body">
+                                    <div class="tabbable">
+                                        <ul class="nav nav-tabs nav-tabs-highlight nav-justified">
+                                            <li class="active"><a href="#highlighted-justified-tab1" data-toggle="tab" onclick="ClearForm()">Student</a></li>
+                                            <li><a href="#highlighted-justified-tab2" data-toggle="tab" onclick="ClearForm()">Admin</a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="highlighted-justified-tab1">
+                                                @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { id = "StudentRegisterForm",  role = "form" }))
+                                                {
+                                                    @Html.AntiForgeryToken()
+                                                    HtmlHelper.UnobtrusiveJavaScriptEnabled = true;
+                                                    HtmlHelper.ClientValidationEnabled = true;
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="panel registration-form">
+                                                                <div class="panel-body">
+                                                                    <div class="text-center">
+                                                                        <div class="icon-object border-success text-success" style="color: #222222 !important; border-color: #222222"><i class="fa fa-user-circle-o"></i></div>
+                                                                        <h5 class="content-group-lg">Create a student account <small class="display-block">All fields are required</small></h5>
+                                                                    </div>
+                                                                    <div class="form-group has-feedback">
+                                                                        @Html.TextBoxFor(m => m.Student.Username, new { name = "UsernameInput", id = "UsernameInput", @class = "form-control", placeholder = "Username" })
+                                                                        @Html.ValidationMessageFor(m => m.Student.Username, "", new { @class = "text-danger" })
+                                                                        <div class="form-control-feedback">
+                                                                            <i class="icon-user-plus text-muted"></i>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group has-feedback">
+                                                                                @Html.TextBoxFor(m => m.Student.FirstName, new { name = "FirstNameInput", id = "FirstNameInput", @class = "form-control", placeholder = "First name" })
+                                                                                @Html.ValidationMessageFor(m => m.Student.FirstName, "", new { @class = "text-danger" })
+                                                                                <div class="form-control-feedback">
+                                                                                    <i class="icon-user-check text-muted"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group has-feedback">
+                                                                                @Html.TextBoxFor(m => m.Student.LastName, new { name = "LastNameInput", id = "LastNameInput", @class = "form-control", placeholder = "Last name" })
+                                                                                @Html.ValidationMessageFor(m => m.Student.LastName, "", new { @class = "text-danger" })
+                                                                                <div class="form-control-feedback">
+                                                                                    <i class="icon-user-check text-muted"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group has-feedback">
+                                                                                @Html.PasswordFor(m => m.Student.Password, new { name = "PasswordInput", id = "PasswordInput", @class = "form-control", placeholder = "Password" })
+                                                                                @Html.ValidationMessageFor(m => m.Student.Password, "", new { @class = "text-danger" })
+                                                                                <div class="form-control-feedback">
+                                                                                    <i class="icon-user-lock text-muted"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group has-feedback">
+                                                                                @Html.PasswordFor(m => m.Student.ConfirmPassword, new { name = "ConfirmPasswordInput", id = "ConfirmPasswordInput", @class = "form-control", placeholder = "Confirm password" })
+                                                                                @Html.ValidationMessageFor(m => m.Student.ConfirmPassword, "", new { @class = "text-danger" })
+                                                                                <div class="form-control-feedback">
+                                                                                    <i class="icon-user-lock text-muted"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group has-feedback">
+                                                                                @Html.TextBoxFor(m => m.Student.Email, new { name = "EmailInput", id = "EmailInput", type = "Email", @class = "form-control", placeholder = "Email" })
+                                                                                @Html.ValidationMessageFor(m => m.Student.Email, "", new { @class = "text-danger" })
+                                                                                <div class="form-control-feedback">
+                                                                                    <i class="icon-mention text-muted"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group has-feedback">
+                                                                                @Html.TextBoxFor(m => m.Student.ConfirmEmail, new { name = "ConfirmEmailInput", id = "ConfirmEmailInput", type = "Email", @class = "form-control", placeholder = "Repeat email" })
+                                                                                @Html.ValidationMessageFor(m => m.Student.ConfirmEmail, "", new { @class = "text-danger" })
+                                                                                <div class="form-control-feedback">
+                                                                                    <i class="icon-mention text-muted"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group has-feedback">
+                                                                                @Html.TextBoxFor(m => m.Student.Company, new { name = "CompanyInput", id = "CompanyInput", @class = "form-control", placeholder = "Company" })
+                                                                                @Html.ValidationMessageFor(m => m.Student.Company, "", new { @class = "text-danger" })
+                                                                                <div class="form-control-feedback">
+                                                                                    <i class="icon-mention text-muted"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group has-feedback">
+                                                                                @Html.TextBoxFor(m => m.Student.Number, new { name = "NumberInput", id = "NumberInput", @class = "form-control", placeholder = "Number" })
+                                                                                @Html.ValidationMessageFor(m => m.Student.Number, "", new { @class = "text-danger" })
+                                                                                <div class="form-control-feedback">
+                                                                                    <i class="icon-mention text-muted"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group has-feedback">
+                                                                                @Html.TextBoxFor(m => m.Student.ReportGroup, new { name = "ReportGroupInput", id = "ReportGroupInput", @class = "form-control", placeholder = "Report Group" })
+                                                                                @Html.ValidationMessageFor(m => m.Student.ReportGroup, "", new { @class = "text-danger" })
+                                                                                <div class="form-control-feedback">
+                                                                                    <i class="icon-mention text-muted"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group has-feedback">
+                                                                                @Html.TextBoxFor(m => m.Student.StudentCategory, new { name = "StudentCategoryInput", id = "StudentCategoryInput", @class = "form-control", placeholder = "Student Category" })
+                                                                                @Html.ValidationMessageFor(m => m.Student.StudentCategory, "", new { @class = "text-danger" })
+                                                                                <div class="form-control-feedback">
+                                                                                    <i class="icon-mention text-muted"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="form-group has-feedback">
+                                                                                @Html.TextAreaFor(m => m.Student.Comments, new { name = "CommentsInput", id = "CommentsInput", @class = "form-control", placeholder = "Comments", rows = "6" })
+                                                                                @Html.ValidationMessageFor(m => m.Student.Comments, "", new { @class = "text-danger" })
+                                                                                <div class="form-control-feedback">
+                                                                                    <i class="icon-mention text-muted"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    @*@Html.ValidationSummary("", new { @class = "text-danger" })*@
+                                                                    <div class="text-right">
+                                                                        <button type="submit" class="btn bg-black-400 btn-labeled btn-labeled-right ml-10"><b><i class="fa fa-user-plus"></i></b> Create account</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                }
+                                            </div>
+                                            <div class="tab-pane" id="highlighted-justified-tab2">
+                                                @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { id = "AdminRegisterForm", role = "form" }))
+                                                {
+                                                    @Html.AntiForgeryToken()
+                                                    HtmlHelper.UnobtrusiveJavaScriptEnabled = true;
+                                                    HtmlHelper.ClientValidationEnabled = true;
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="panel registration-form">
+                                                                <div class="panel-body">
+                                                                    <div class="text-center">
+                                                                        <div class="icon-object border-success text-success" style="color: #222222 !important; border-color: #222222"><i class="fa fa-user-circle"></i></div>
+                                                                        <h5 class="content-group-lg">Create an admin account <small class="display-block">All fields are required</small></h5>
+                                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group has-feedback">
+                                                                                @Html.TextBoxFor(m => m.Admin.FirstName, new {name = "AdminFirstName", id = "AdminFirstName", @class = "form-control", placeholder = "First name" })
+                                                                                @Html.ValidationMessageFor(m => m.Admin.FirstName, "", new { @class = "text-danger" })
+   
+                                                                                <div class="form-control-feedback">
+                                                                                    <i class="icon-user-check text-muted"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group has-feedback">
+                                                                                @Html.TextBoxFor(m => m.Admin.LastName, new { name = "AdminLastName", id = "AdminLastName", @class = "form-control", placeholder = "Last name" })
+                                                                                @Html.ValidationMessageFor(m => m.Admin.LastName, "", new { @class = "text-danger" })
+                                                                                <div class="form-control-feedback">
+                                                                                    <i class="icon-user-check text-muted"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group has-feedback">
+                                                                                @Html.TextBoxFor(m => m.Admin.Username, new { name = "AdminUsername", id = "AdminUsername", @class = "form-control", placeholder = "Username" })
+                                                                                @Html.ValidationMessageFor(m => m.Admin.Username, "", new { @class = "text-danger" })
+                                                                                <div class="form-control-feedback">
+                                                                                    <i class="icon-user-check text-muted"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group has-feedback">
+                                                                                @Html.TextBoxFor(m => m.Admin.Number, new { name = "AdminNumber", id = "AdminNumber", @class = "form-control", placeholder = "Number" })
+                                                                                @Html.ValidationMessageFor(m => m.Admin.Number, "", new { @class = "text-danger" })
+                                                                                <div class="form-control-feedback">
+                                                                                    <i class="icon-user-check text-muted"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group has-feedback">
+                                                                                @Html.PasswordFor(m => m.Admin.Password, new { name = "AdminPassword", id = "AdminPassword", @class = "form-control", placeholder = "Password" })
+                                                                                @Html.ValidationMessageFor(m => m.Admin.Password, "", new { @class = "text-danger" })
+                                                                                <div class="form-control-feedback">
+                                                                                    <i class="icon-user-lock text-muted"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group has-feedback">
+                                                                                @Html.PasswordFor(m => m.Admin.ConfirmPassword, new { name = "AdminConfirmPassword", id = "AdminConfirmPassword", @class = "form-control", placeholder = "Confirm Password" })
+                                                                                @Html.ValidationMessageFor(m => m.Admin.ConfirmPassword, "", new { @class = "text-danger" })
+                                                                                <div class="form-control-feedback">
+                                                                                    <i class="icon-user-lock text-muted"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group has-feedback">
+                                                                                @Html.TextBoxFor(m => m.Admin.Email, new { name = "AdminEmail", id = "AdminEmail", type = "Email", @class = "form-control", placeholder = "Email" })
+                                                                                @Html.ValidationMessageFor(m => m.Admin.Email, "", new { @class = "text-danger" })
+                                                                                <div class="form-control-feedback">
+                                                                                    <i class="icon-mention text-muted"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group has-feedback">
+                                                                                @Html.TextBoxFor(m => m.Admin.ConfirmEmail, new { name = "AdminConfirmEmail", id = "AdminConfirmEmail", type = "Email", @class = "form-control", placeholder = "Repeat Email" })
+                                                                                @Html.ValidationMessageFor(m => m.Admin.ConfirmEmail, "", new { @class = "text-danger" })
+                                                                                <div class="form-control-feedback">
+                                                                                    <i class="icon-mention text-muted"></i>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    @{
+                                                                        List<SelectListItem> RoleSelector = new List<SelectListItem>();
+
+                                                                        RoleSelector.Add(new SelectListItem
+                                                                        {
+                                                                            Text = "Administrator",
+                                                                            Value = "Administrator"
+                                                                        });
+                                                                        RoleSelector.Add(new SelectListItem
+                                                                        {
+                                                                            Text = "SuperAdmin",
+                                                                            Value = "SuperAdmin"
+                                                                        });
+                                                                    }
+
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <div class="form-group has-feedback">
+                                                                                @Html.LabelFor(m => m.Admin.UserType)
+                                                                                @Html.DropDownListFor(m => m.Admin.UserType, RoleSelector, new { @class = "form-control"})
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    @*@Html.ValidationSummary("", new { @class = "text-danger" })*@
+                                                                    <div class="text-right">
+                                                                        <button type="submit" class="btn bg-black-400 btn-labeled btn-labeled-right ml-10"><b><i class="fa fa-user-plus"></i></b> Create account</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /content area -->
+            </div>
+            <!-- /main content -->
+        </div>
+        <!-- /page content -->
+    </div>
+    <!-- /page container -->
+</div>
+
+<script>
+
+    function ClearForm() {
+        $("input[type=text], textarea").val("");
+        $('.validation-summary-errors').html("");
+    }
+
+    jQuery.validator.setDefaults({
+        debug: false,
+        success: "valid"
+    });
+
+    //jQuery.validator.addMethod("validNames", function (value, element) {
+    //    return this.optional(element) || /([a-zA-Z]+(-)?(')?(\s)?){1,3}/.test(value);
+    //}, "Please enter letters only.");
+
+    //$("#StudentRegisterForm").validate({
+    //    rules: {
+    //        UsernameInput: {
+    //            required: true,
+    //            minlength: 6
+    //        },
+    //        FirstNameInput: {
+    //            required: true,
+                
+    //        },
+    //        LastNameInput: {
+    //            required: true
+    //        },
+    //        PasswordInput: {
+    //            required: true,
+    //            minlength: 6
+    //        },
+    //        ConfirmPasswordInput: {
+    //            required: true,
+    //            minlength: 6,
+    //            equalTo: "#PasswordInput"
+    //        },
+    //        EmailInput: {
+    //            required: true
+    //        },
+    //        ConfirmEmailInput: {
+    //            required: true,
+    //            equalTo: "#EmailInput"
+    //        },
+    //        CompanyInput: {
+    //            required: true
+    //        },
+    //        NumberInput: {
+    //            required: true
+    //        },
+    //        ReportGroupInput: {
+    //            required: true
+    //        },
+    //        StudentCategoryInput: {
+    //            required: true
+    //        },
+    //        CommentsInput: {
+    //            required: true
+    //        }
+    //    }
+    //});
+
+    //$(document).ready(function () {
+    //    $("#AdminRegisterForm").validate({
+    //        errorClass: 'help-block animation-slidedown',
+    //        errorElement: 'div',
+
+    //        errorPlacement: function (error, e) {
+    //            e.parents('.form-group > div').append(error);
+    //        },
+
+    //        highlight: function (e) {
+    //            $(e).closest('.form-group').removeClass('has-success has-error').addClass('has-error');
+    //            $(e).closest('.help-block').remove();
+    //        },
+
+    //        success: function (e) {
+    //            e.closest('.form-group').removeClass('has-success has-error');
+    //            e.closest('help-block').remove();
+    //        },
+
+    //        rules: {
+
+    //            'Admin.FirstName': {
+    //                required: true,
+    //                validNames: true
+    //            },
+    //            'Admin.LastName': {
+    //                required: true
+    //            },
+    //            'Admin.Username': {
+    //                required: true
+    //            },
+    //            'Admin.Number': {
+    //                required: true
+    //            },
+    //            'Admin.Password': {
+    //                required: true
+    //            },
+    //            'Admin.ConfirmPassword': {
+    //                required: true
+    //            },
+    //            'Admin.Email': {
+    //                required: true
+    //            },
+    //            'Admin.ConfirmEmail': {
+    //                required: true
+    //            }
+    //        },
+
+    //        messages: {
+
+    //            'Admin.FirstName': {
+    //                required: 'Please provide a first name you dummy'
+    //            }
+    //        }
+
+    //    });
+    //});
+
+   
+
+</script>

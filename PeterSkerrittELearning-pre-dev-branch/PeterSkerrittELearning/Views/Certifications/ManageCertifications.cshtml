@@ -1,0 +1,105 @@
+﻿@model  PeterSkerrittELearning.Models.ManageCertificateViewModel
+
+@{
+    ViewBag.Title = "ManageCertifications";
+}
+
+@Styles.Render("~/Content/core")
+@Styles.Render("~/Content/icomoon")
+
+@*@Scripts.Render("~/bundles/jquery")*@
+@*@Scripts.Render("~/bundles/bootstrap")*@
+@Scripts.Render("~/bundles/advance_table")
+
+<style>
+    .button-next {
+        display: none !important;
+    }
+
+    .stepy-finish {
+        display: none !important;
+    }
+</style>
+
+<br />
+<br />
+<br />
+
+<!-- Basic setup -->
+<div class="panel panel-white">
+
+    <div class="stepy-basic" action="#">
+        <fieldset title="1">
+            <legend class="text-semibold">Certificates</legend>
+
+            <div class="row">
+                <div id="CertificatesStep" class="col-md-12">
+
+                    @Html.Partial("_Certificate")
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset title="2">
+            <legend class="text-semibold">Assessments</legend>
+
+            <div class="row">
+                <div id="AssessmentsStep" class="col-md-12">
+
+                    @Html.Partial("_Assessment")
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset title="3">
+            <legend class="text-semibold">Tests</legend>
+
+            <div id="ModulesStep" class="row">
+                <div class="col-md-12">
+
+                    @Html.Partial("_Module")
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset title="4">
+            <legend class="text-semibold">Sections</legend>
+
+            <div id="SectionsStep" class="row">
+                <div class="col-md-12">
+                    @Html.Partial("_Section")
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset title="5">
+            <legend class="text-semibold">Questions</legend>
+
+            <div class="row">
+                <div id="QuestionsStep" class="col-md-12">
+                    @Html.Partial("_Question")
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset title="6">
+            <legend class="text-semibold">Answers</legend>
+
+            <div class="row">
+                <div id="AnswersStep" class="col-md-12">
+                    @Html.Partial("_Answer")
+                </div>
+            </div>
+        </fieldset>
+
+        <button type="submit" class="btn btn-primary stepy-finish">Submit <i class="icon-check position-right"></i></button>
+    </div>
+</div>
+
+@Scripts.Render("~/bundles/core")
+@Scripts.Render("~/bundles/theme")
+@Scripts.Render("~/bundles/wizzard_steppy")
+
+@section Scripts{
+
+    }

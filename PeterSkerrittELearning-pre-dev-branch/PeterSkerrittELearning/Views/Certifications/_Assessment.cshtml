@@ -1,0 +1,304 @@
+﻿@model  PeterSkerrittELearning.Models.ManageCertificateViewModel
+
+@Scripts.Render("~/bundles/advanced_table")
+@Scripts.Render("~/bundles/dropzone")
+@Styles.Render("~/Content/dropzone")
+
+<!-- Page length options -->
+<div class="panel panel-flat">
+    <div>
+        <button type="button" class="btn btn-dark pull-right" data-toggle="modal" data-target="#myModalAss">Add <i class="fa fa-plus"></i></button>
+    </div>
+
+    <table class="table  table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th class="text-center"></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @if (Model.Assessments != null)
+            {
+                foreach (var item in Model.Assessments)
+                {
+
+                    <tr>
+                        <td onclick="AssRowClick(@item.Id);">@item.Name</td>
+                        <td onclick="AssRowClick(@item.Id);">@item.Description</td>
+                        <td style="text-align:right">
+                            <button onclick="AssessmentEditClick(@item.Id);" type="button" class="btn btn-default"><i class="fa fa-pencil"></i></button>
+                            <button onclick="AssDelClick(@item.Id);" type="button" class="btn btn-lightdark"><i class="fa fa-trash"></i></button>
+                        </td>
+                    </tr>
+
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="panel panel-flat">
+    <div class="panel-heading">
+        <h3 class="panel-title">Material</h3>
+    </div>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th class="text-center"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var material in Model.Material)
+            {
+                var extention = Path.GetExtension(material.Path);
+                <tr>
+                    @if (extention == ".mp4" || extention == ".mp3" || extention == ".mkv")
+                    {
+                        <td onclick="StreamMedia(@material.Id);">@material.Name</td>
+                    }
+                    else
+                    {
+                        <td onclick="DownloadMaterial(@material.Id);">@material.Name</td>
+                    }
+                    <td style="text-align:right">
+                        <button onclick="RemoveMaterial(@material.Id)" type="button" class="btn btn-lightdark"><i class="fa fa-trash"></i></button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="panel panel-flat">
+    <form action="@Url.Action("UploadMaterial", "Certifications", new { CertificationId = Model.wizardIds.CertificationId })"
+          class="dropzone"
+          id="my-awesome-dropzone" runat="Server" enctype="multipart/form-data"></form>
+</div>
+
+<!-- /basic setup -->
+<!-- Trigger the modal with a button -->
+
+<style>
+    .modal-dialog {
+        left: 0% !important;
+    }
+
+    .paginate_button.current {
+        background-color: #222222 !important;
+    }
+
+    .dz-size {
+        margin-left: 25%;
+    }
+</style>
+
+<!-- Modal -->
+<div id="myModalAss" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Assessments</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input id="txtAssName" type="text" class="form-control" required placeholder="Name" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea id="txtAssDesc" type="text" style="height:200px" class="form-control" required placeholder="Description"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button onclick="AssSaveClick();" type="button" class="btn btn-dark" data-dismiss="modal">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /page length options -->
+
+<script>
+
+    $(".dropzone").dropzone({
+        maxFiles: 1,
+        maxFilesize: 1000,
+        maxThumbnailFilesize: 1000,
+        acceptedFiles: ".mp3, .wmv, .mp4, image/*, .mkv, .flv, .3gp, application/pdf, .doc, .docx, .ppt, .pps, .pot, .pptx, .ppsx, .potx, .sldx, .xls, .xlt, .xlm, .xlsx, .xlsm, .xltx, .xltm, .wav, .aac",
+        init: function () {
+            this.on("queuecomplete", function (file) {
+                if (this.getUploadingFiles().length === 0 && this.getQueuedFiles().length === 0) {
+                    $(".dz-success-mark").hide();
+                    var DBCall = '&v=' + Math.random();
+                    setTimeout(function () {
+                        $('#AssessmentsStep').load("/Certifications/_Assessment?Id=" + @Model.wizardIds.CertificationId + DBCall);
+                    }, 1000)
+                }
+            });
+        }
+    });
+
+    function DownloadMaterial(Id)
+    {
+        var win = window.open("/Certifications/Download?Id=" + Id);
+    }
+
+    function StreamMedia(Id)
+    {
+        var win = window.open("/Certifications/StreamMedia?Id=" + Id);
+    }
+
+    function RemoveMaterial(Id)
+    {
+        
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("RemoveMaterial", "Certifications")',
+                data: { "Id": Id },
+                success: function (data) {
+                    var DBCall = '&v=' + Math.random();
+                    $('#AssessmentsStep').load("/Certifications/_Assessment?Id=" + @Model.wizardIds.CertificationId + DBCall);
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            });
+        
+    }
+
+    var AssNo = 0;
+
+    function AssessmentEditClick(Id) {
+
+        AssNo = Id;
+
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("GetAssessment", "Certifications")',
+            data: { "Id" : Id},
+            success: function (data) {
+                var obj = JSON.parse(data)
+
+                $('#txtAssName').val(obj.Name)
+                $('#txtAssDesc').val(obj.Description)
+
+                $("#myModalAss").modal('show')
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        });
+    }
+
+        function AssDelClick(Id) {
+
+            var Delobj = {
+                "Id": Id,
+                "CertificationId": @Model.wizardIds.CertificationId
+            };
+
+            
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("DeleteAssessment", "Certifications")',
+                    data: Delobj,
+                    success: function () {
+                        console.log('Delete Success');
+                        console.log(Delobj);
+                        var DBCall = '&v=' + Math.random();
+                        $('#AssessmentsStep').load("/Certifications/_Assessment?Id=" + Delobj.CertificationId + DBCall);
+                    },
+                    error: function (err) {
+                        console.log(err);
+                    }
+                });
+            
+        }
+
+         function AssRowClick(Id) {
+
+            var obj = {
+                "Id": Id
+            };
+
+            var buttons = $('#AssessmentsStep').closest('fieldset').find('.stepy-navigator');
+            console.log(buttons.length);
+            if (buttons.length) {
+
+                var next = buttons.children('.button-next');
+
+                if (next.length) {
+                    next.click();
+                } else if (self.finish) {
+                    self.finish.click();
+                }
+            }
+
+              $.ajax({
+                type: "POST",
+                url: '@Url.Action("LoadModulesByAssessment", "Certifications")',
+                data: obj,
+                success: function () {
+                    console.log('Success Click Cert');
+                    var DBCall = '&v=' + Math.random();
+                    $('#ModulesStep').load("/Certifications/_Module?Id=" + obj.Id + DBCall);
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            });
+
+        }
+
+        function AssSaveClick() {
+            try {
+
+                var obj = {
+                    "Id": AssNo,
+                    "Name": $('#txtAssName').val(),
+                    "Description": $('#txtAssDesc').val(),
+                    "CertificationId": @Model.wizardIds.CertificationId
+
+                };
+
+                console.log(obj);
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("SaveAssessment", "Certifications")',
+                    data: obj,
+                    success: function () {
+
+                        var DBCall = '&v=' + Math.random();
+                        $('#AssessmentsStep').load("/Certifications/_Assessment?Id=" + obj.CertificationId + DBCall);
+                        console.log('Add Assessment Success')
+                        AssNo = 0;
+                    },
+                    error: function (err) {
+                        console.log(err);
+                        var DBCall = '?v=' + Math.random();
+                        $('#AssessmentsStep').load("/Certifications/_Assessment?Id=" + obj.CertificationId + DBCall);
+                    }
+                });
+
+            } catch (e) {
+                console.log(e);
+            }
+
+        }
+</script>

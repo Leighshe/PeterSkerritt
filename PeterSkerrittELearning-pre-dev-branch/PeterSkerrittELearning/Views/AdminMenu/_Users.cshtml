@@ -1,0 +1,77 @@
+﻿@Styles.Render("~/Content/core")
+@Styles.Render("~/Content/icomoon")
+@Scripts.Render("~/bundles/advance_table")
+
+<style>
+    .paginate_button.current {
+        background-color: #222222 !important;
+    }
+</style>
+
+<div class="panel panel-flat">
+    <table class="table datatable-show-all">
+        <thead>
+            <tr>
+                <th>Fullname</th>
+                <th>Username</th>
+                <th>Email Address</th>
+                <th>Phone Number</th>
+                <th>Status</th>
+                <th class="text-center"></th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.FirstName @user.LastName</td>
+                    <td>@user.Username</td>
+                    <td>@user.ApplicationUser.Email</td>
+                    <td>@user.PhoneNumber</td>
+                    @if (user.Active == true)
+                    {
+                        <td><span class="label bg-success-400">Active</span></td>
+                    }
+                    else
+                    {
+                        <td><span class="label bg-danger-400">Inactive</span></td>
+                    }
+                    <td style="text-align:right">
+                        <button title="Edit" onclick="UserEditClick('@user.ApplicationUserId')" type="button" class="btn btn-default"><i class="fa fa-pencil"></i></button>
+                        <button title="Active/Inactive" onclick="UserDeleteClick('@user.ApplicationUserId')" type="button" class="btn btn-lightdark"><i class="fa fa fa-hand-spock-o"></i></button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script>
+    function UserEditClick(Id)
+    {
+        window.location = "/AdminMenu/EditUserView?Id=" + Id;
+    }
+
+    function UserDeleteClick(Id) {
+        console.log(Id);
+        
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("RemoveUser", "AdminMenu")',
+                data: { "Id": Id },
+                success: function () {
+
+                    var DBCall = '?v=' + Math.random();
+                    $('#UsersContainer').load("/AdminMenu/_Users" + DBCall);
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            });
+        
+    }
+</script>
+
+@Scripts.Render("~/bundles/core")
+@Scripts.Render("~/bundles/theme")

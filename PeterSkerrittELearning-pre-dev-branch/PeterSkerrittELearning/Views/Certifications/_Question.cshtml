@@ -1,0 +1,282 @@
+﻿@model  PeterSkerrittELearning.Models.ManageCertificateViewModel
+
+<script src="~/assets/ckeditor/ckeditor.js"></script>
+
+<style>
+    input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        margin-left: 10px !important;
+    }
+
+    .caret {
+        display: none !important;
+    }
+
+    .modal-dialog {
+        left: 0% !important;
+    }
+
+</style>
+
+<script src="~/assets/js/plugins/notifications/pnotify.min.js"></script>
+<script src="~/assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+<script src="~/assets/js/pages/form_multiselect.js"></script>
+
+<!-- Page length options -->
+<div class="panel panel-flat">
+    <div>
+        <button type="button" class="btn btn-dark pull-right" data-toggle="modal" data-target="#QuestionModal">Add <i class="fa fa-plus"></i></button>
+    </div>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th class="text-center"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Questions != null)
+            {
+                foreach (var item in Model.Questions)
+                {
+
+                    <tr>
+                        <td onclick="QuestionRowClick(@item.Id);">@item.Name</td>
+                        <td style="text-align:right">
+                            <button onclick="QuestionEditClick(@item.Id);" type="button" class="btn btn-default"><i class="fa fa-pencil"></i></button>
+                            <button onclick="QuestionDeleteClick(@item.Id);" type="button" class="btn btn-lightdark"><i class="fa fa-trash"></i></button>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+<div class="panel panel-flat">
+    <div class="panel-heading">
+        <h3 class="panel-title">Add Existing Questions</h3>
+    </div>
+    <div class="container-fluid">
+        <div class="row"  style="margin-bottom: 20px;">
+            <div class="form-group dropup">
+                <div class="multi-select-full">
+                    <select id="ExistingQuestions" class="multiselect-full-featured" multiple="multiple">
+                        @foreach (var test in Model.TestAndQuestions)
+                        {
+                            <optgroup label="@test.Test.Name">
+                                @foreach (var question in test.Questions)
+                                {
+                                    <option value="@question.Id">@question.Name</option>
+                                }
+                            </optgroup>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button onclick="AddExistingQuestions()" type="button" class="btn btn-dark pull-right">Add <i class="fa fa-plus"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /basic setup -->
+<!-- Trigger the modal with a button -->
+<!-- Modal -->
+<div id="QuestionModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Questions</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input id="txtNameQuestion" type="text" class="form-control" required placeholder="Name" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Score</label>
+                            <input id="txtScoreQuestion" step="1" type="number" class="form-control" required placeholder="Score" value="1" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea id="txtDescQuestion" name="txtDescQuestion" type="text" style="height:200px" class="form-control" required placeholder="Description"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button onclick="QuestionSaveClick();" type="button" class="btn btn-dark" data-dismiss="modal">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /page length options -->
+
+<script>
+
+    var QueNo = 0;
+
+    CKEDITOR.replace('txtDescQuestion');
+
+    function QuestionEditClick(Id) {
+        QueNo = Id;
+
+        $.ajax({
+                type: "POST",
+                url: '@Url.Action("GetQuestion", "Certifications")',
+                data: { "Id" : Id},
+                success: function (data) {
+                    var obj = JSON.parse(data)
+
+                    $('#txtNameQuestion').val(obj.Name)
+                    CKEDITOR.instances['txtDescQuestion'].setData(obj.Description)
+                    $('#txtScoreQuestion').val(obj.Score)
+
+                    $("#QuestionModal").modal('show')
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            });
+    }
+
+    function QuestionDeleteClick(Id) {
+
+            var Delobj = {
+                "Id": Id,
+                "SectionId": @Model.wizardIds.SectioId
+            };
+            
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("DeleteQuestion", "Certifications")',
+                    data: Delobj,
+                    success: function () {
+                        console.log('Success');
+                        var DBCall = '&v=' + Math.random();
+                        $('#QuestionsStep').load("/Certifications/_Question?Id=" + Delobj.SectionId + DBCall);
+                    },
+                    error: function (err) {
+                        console.log(err);
+                    }
+                });
+            
+        }
+
+        function QuestionRowClick(Id) {
+
+            var obj = {
+                "Id": Id,
+
+            };
+
+            //$('.stepy-step').find('.button-next').trigger('click');
+
+            var buttons = $('#QuestionsStep').closest('fieldset').find('.stepy-navigator');
+
+            if (buttons.length) {
+
+                var next = buttons.children('.button-next');
+
+                if (next.length) {
+                    next.click();
+                } else if (self.finish) {
+                    self.finish.click();
+                }
+            }
+
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("LoadAnswersByQuestion", "Certifications")',
+                data: obj,
+                success: function () {
+                    console.log('Success Click Cert');
+                    var DBCall = '&v=' + Math.random();
+                    $('#AnswersStep').load("/Certifications/_Answer?Id=" + obj.Id + DBCall);
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            });
+        }
+
+        function QuestionSaveClick()
+        {
+            try {
+
+                var obj = {
+                    "Id": QueNo,
+                    "Name": $('#txtNameQuestion').val(),
+                    "Description": CKEDITOR.instances.txtDescQuestion.getData(),
+                    "Score": $('#txtScoreQuestion').val(),
+                    "SectionId": @Model.wizardIds.SectioId
+                };
+
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("SaveQuestion", "Certifications")',
+                    data: obj,
+                    success: function () {
+
+                        var DBCall = '&v=' + Math.random();
+                        $('#QuestionsStep').load("/Certifications/_Question?Id=" + obj.SectionId + DBCall);
+
+                        SecNo = 0;
+                    },
+                    error: function (err) {
+                        console.log(err);
+                    }
+                });
+
+            } catch (e) {
+                console.log(e);
+            }
+
+        }
+
+        function AddExistingQuestions()
+        {
+            $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("AddExistingQuestions", "Certifications")',
+                    data: { "QuestionIds": $('select#ExistingQuestions').val(), "CurrentSection": @Model.wizardIds.SectioId },
+                    success: function () {
+                        var DBCall = '&v=' + Math.random();
+                        $('#QuestionsStep').load("/Certifications/_Question?Id=" + @Model.wizardIds.SectioId + DBCall);
+                    },
+                    error: function (err) {
+                        console.log(err);
+                    }
+                });
+        }
+
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('.multiselect-full-featured').multiselect({
+                    onChange: function () {
+                        $.uniform.update();
+                    }
+                });
+            }, 500)
+        })
+
+</script>

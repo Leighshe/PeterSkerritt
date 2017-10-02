@@ -1,0 +1,451 @@
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\ApplicationInsights.config
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\csc.exe
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\csc.exe.config
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\csc.rsp
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\csi.exe
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\csi.rsp
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\System.AppContext.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\System.Collections.Immutable.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\System.IO.FileSystem.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\System.Reflection.Metadata.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\vbc.exe
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\vbc.exe.config
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\vbc.rsp
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\VBCSCompiler.exe
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\VBCSCompiler.exe.config
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\PeterSkerrittELearning.dll.config
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\PeterSkerrittELearning.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\PeterSkerrittELearning.pdb
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Antlr3.Runtime.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\EntityFramework.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\EntityFramework.SqlServer.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AI.Agent.Intercept.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AI.DependencyCollector.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AI.Web.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AI.WindowsServer.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.ApplicationInsights.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.Core.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Cookies.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Facebook.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Google.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.OAuth.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Twitter.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Web.Infrastructure.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Newtonsoft.Json.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Owin.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.Helpers.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.Mvc.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.Optimization.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.Razor.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.WebPages.Deployment.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.WebPages.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.WebPages.Razor.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\WebGrease.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.Helpers.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.Mvc.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.Optimization.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.Razor.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.WebPages.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.WebPages.Deployment.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.WebPages.Razor.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Antlr3.Runtime.pdb
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Newtonsoft.Json.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\EntityFramework.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\EntityFramework.SqlServer.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.Core.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Facebook.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Cookies.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.OAuth.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Google.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Twitter.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.ApplicationInsights.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AI.DependencyCollector.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AI.WindowsServer.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AI.Web.xml
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\obj\Debug\PeterSkerrittELearning.csprojResolveAssemblyReference.cache
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\obj\Debug\PeterSkerrittELearning.dll
+D:\New Development\New folder\PeterSkerrittELearning\PeterSkerrittELearning\obj\Debug\PeterSkerrittELearning.pdb
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\ApplicationInsights.config
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\csc.exe
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\csc.exe.config
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\csc.rsp
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\csi.exe
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\csi.rsp
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\System.AppContext.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\System.Collections.Immutable.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\System.IO.FileSystem.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\System.Reflection.Metadata.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\vbc.exe
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\vbc.exe.config
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\vbc.rsp
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\VBCSCompiler.exe
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\roslyn\VBCSCompiler.exe.config
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\PeterSkerrittELearning.dll.config
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\PeterSkerrittELearning.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\PeterSkerrittELearning.pdb
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Antlr3.Runtime.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\EntityFramework.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\EntityFramework.SqlServer.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AI.DependencyCollector.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AI.Web.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AI.WindowsServer.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.ApplicationInsights.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Google.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Web.Infrastructure.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Newtonsoft.Json.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Owin.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.Helpers.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.Mvc.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.Optimization.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.Razor.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.WebPages.Deployment.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.WebPages.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.WebPages.Razor.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\WebGrease.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.Helpers.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.Mvc.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.Optimization.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.Razor.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.WebPages.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.WebPages.Deployment.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\System.Web.WebPages.Razor.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Antlr3.Runtime.pdb
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Newtonsoft.Json.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\EntityFramework.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\EntityFramework.SqlServer.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Google.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.ApplicationInsights.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AI.DependencyCollector.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AI.WindowsServer.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\Microsoft.AI.Web.xml
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\obj\Debug\PeterSkerrittELearning.csprojResolveAssemblyReference.cache
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\obj\Debug\PeterSkerrittELearning.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\obj\Debug\PeterSkerrittELearning.pdb
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\MySql.Data.dll
+D:\Kruger Development\Projects\PeterSkerritt\PeterSkerrittELearning\PeterSkerrittELearning\bin\MySql.Data.Entity.EF6.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\ApplicationInsights.config
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\csc.exe
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\csc.exe.config
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\csc.rsp
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\csi.exe
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\csi.rsp
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\System.AppContext.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\System.Collections.Immutable.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\System.IO.FileSystem.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\System.Reflection.Metadata.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\vbc.exe
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\vbc.exe.config
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\vbc.rsp
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\VBCSCompiler.exe
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\roslyn\VBCSCompiler.exe.config
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\PeterSkerrittELearning.dll.config
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\PeterSkerrittELearning.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\PeterSkerrittELearning.pdb
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Antlr3.Runtime.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\EntityFramework.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\EntityFramework.SqlServer.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.AI.Agent.Intercept.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.AI.DependencyCollector.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.AI.Web.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.AI.WindowsServer.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.ApplicationInsights.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.Owin.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.Owin.Security.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Google.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.Web.Infrastructure.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\MySql.Data.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\MySql.Data.Entity.EF6.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Newtonsoft.Json.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Owin.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\System.Web.Helpers.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\System.Web.Mvc.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\System.Web.Optimization.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\System.Web.Razor.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\System.Web.WebPages.Deployment.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\System.Web.WebPages.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\System.Web.WebPages.Razor.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\WebGrease.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\System.Web.Helpers.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\System.Web.Mvc.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\System.Web.Optimization.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\System.Web.Razor.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\System.Web.WebPages.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\System.Web.WebPages.Deployment.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\System.Web.WebPages.Razor.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Antlr3.Runtime.pdb
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Newtonsoft.Json.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\EntityFramework.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\EntityFramework.SqlServer.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.Owin.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.Owin.Security.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Google.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.ApplicationInsights.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.AI.DependencyCollector.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.AI.WindowsServer.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\bin\Microsoft.AI.Web.xml
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\obj\Debug\PeterSkerrittELearning.csprojResolveAssemblyReference.cache
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\obj\Debug\PeterSkerrittELearning.csproj.CoreCompileInputs.cache
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\obj\Debug\PeterSkerrittELearning.dll
+D:\Projects\Kruger-TFS\PeterSkerritt\PeterSkerrittELearning-dev\PeterSkerrittELearning\obj\Debug\PeterSkerrittELearning.pdb
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\ApplicationInsights.config
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\csc.exe
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\csc.exe.config
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\csc.rsp
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\csi.exe
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\csi.rsp
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\System.AppContext.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\vbc.exe
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\vbc.exe.config
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\vbc.rsp
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\VBCSCompiler.exe
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\PeterSkerrittELearning.dll.config
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\PeterSkerrittELearning.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\PeterSkerrittELearning.pdb
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Antlr3.Runtime.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\EntityFramework.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\EntityFramework.SqlServer.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\HttpPostedFileHelper.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.AI.Web.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.ApplicationInsights.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Azure.KeyVault.Core.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Data.Edm.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Data.OData.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Data.Services.Client.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Owin.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Owin.Security.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\MySql.Data.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\MySql.Data.Entity.EF6.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Newtonsoft.Json.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\NReco.VideoConverter.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Owin.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Net.Http.Formatting.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Spatial.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Web.Helpers.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Web.Http.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Web.Http.WebHost.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Web.Mvc.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Web.Optimization.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Web.Razor.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Web.WebPages.Deployment.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Web.WebPages.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Web.WebPages.Razor.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\WebGrease.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Azure.KeyVault.Core.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Data.Edm.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Data.OData.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Data.Services.Client.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.WindowsAzure.Storage.pdb
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Newtonsoft.Json.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\NReco.VideoConverter.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Net.Http.Formatting.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Spatial.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Web.Http.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Web.Http.WebHost.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Web.Helpers.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Web.Mvc.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Web.Optimization.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Web.Razor.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Web.WebPages.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Web.WebPages.Deployment.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\System.Web.WebPages.Razor.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Antlr3.Runtime.pdb
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\EntityFramework.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\EntityFramework.SqlServer.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Owin.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Owin.Security.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.ApplicationInsights.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\Microsoft.AI.Web.xml
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\de\Microsoft.Data.OData.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\es\Microsoft.Data.OData.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\it\Microsoft.Data.OData.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\de\Microsoft.Data.Services.Client.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\es\Microsoft.Data.Services.Client.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\fr\Microsoft.Data.Services.Client.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\it\Microsoft.Data.Services.Client.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\ja\Microsoft.Data.Services.Client.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\ko\Microsoft.Data.Services.Client.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\ru\Microsoft.Data.Services.Client.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\de\System.Spatial.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\es\System.Spatial.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\fr\System.Spatial.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\it\System.Spatial.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\ja\System.Spatial.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\ko\System.Spatial.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\ru\System.Spatial.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\zh-Hans\System.Spatial.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\bin\zh-Hant\System.Spatial.resources.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\obj\Debug\PeterSkerrittELearning.csprojResolveAssemblyReference.cache
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\obj\Debug\PeterSkerrittELearning.dll
+C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\obj\Debug\PeterSkerrittELearning.pdb

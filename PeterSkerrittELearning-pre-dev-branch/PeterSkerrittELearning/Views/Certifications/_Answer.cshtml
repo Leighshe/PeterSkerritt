@@ -1,0 +1,243 @@
+﻿@model  PeterSkerrittELearning.Models.ManageCertificateViewModel
+
+<script src="~/assets/ckeditor/ckeditor.js"></script>
+
+<style>
+    input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        margin-left: 10px !important;
+    }
+
+    .caret {
+        display: none !important;
+    }
+
+    .modal-dialog {
+        left: 0% !important;
+    }
+</style>
+
+<script src="~/assets/js/plugins/notifications/pnotify.min.js"></script>
+<script src="~/assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
+<script src="~/assets/js/pages/form_multiselect.js"></script>
+
+<!-- Page length options -->
+<div class="panel panel-flat">
+
+    <div>
+        <button type="button" class="btn btn-dark pull-right" data-toggle="modal" data-target="#AnswerModal">Add <i class="fa fa-plus"></i></button>
+    </div>
+
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th class="text-center"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Answers != null)
+            {
+                foreach (var item in Model.Answers)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td style="text-align:right">
+                            <button onclick="AnswerEditClick(@item.id);" type="button" class="btn btn-default"><i class="fa fa-pencil"></i></button>
+                            <button onclick="AnswerDeleteClick(@item.id);" type="button" class="btn btn-lightdark"><i class="fa fa-trash"></i></button>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+
+</div>
+
+<div class="panel panel-flat">
+    <div class="panel-heading">
+        <h3 class="panel-title">Add Existing Answers</h3>
+    </div>
+    <div class="container-fluid">
+        <div class="row" style="margin-bottom: 20px;">
+            <div class="form-group dropup">
+                <div class="multi-select-full">
+                    <select id="ExistingAnswers" class="multiselect-full-featured" multiple="multiple">
+                        @foreach (var question in Model.AllQuestions)
+                        {
+                            <optgroup label="@question.Name">
+                                @foreach (var answer in question.Answers)
+                                {
+                                    <option value="@answer.id">@answer.Name</option>
+                                }
+                            </optgroup>
+                        }
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button onclick="AddExistingAnswers()" type="button" class="btn btn-dark pull-right">Add <i class="fa fa-plus"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /basic setup -->
+<!-- Trigger the modal with a button -->
+
+<!-- Modal -->
+<div id="AnswerModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Answers</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input id="txtNameAnswer" type="text" class="form-control" required placeholder="Name" />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea id="txtDescAnswer" type="text" style="height:200px" class="form-control" required placeholder="Description"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label>Correct Answer</label>
+                            <input id="chkCorrectAnswer" type="checkbox" class="form-control" style="width: 34px;" required placeholder="Correct Answer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button onclick="AnswerSaveClick();" type="button" class="btn btn-dark" data-dismiss="modal">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /page length options -->
+
+<script>
+
+    var AnswNo = 0;
+
+    CKEDITOR.replace('txtDescAnswer');
+
+    function AnswerEditClick(Id) {
+        AnswNo = Id;
+        $.ajax({
+                type: "POST",
+                url: '@Url.Action("GetAnswer", "Certifications")',
+                data: { "Id" : Id},
+                success: function (data) {
+                    var obj = JSON.parse(data)
+
+                    $('#txtNameAnswer').val(obj.Name)
+                    CKEDITOR.instances['txtDescAnswer'].setData(obj.Description)
+                    $('#chkCorrectAnswer').val(obj.Correct)
+
+                    $("#AnswerModal").modal('show')
+                },
+                error: function (err) {
+                    console.log(err);
+                }
+            });
+    }
+
+    function AnswerDeleteClick(Id) {
+
+            var Delobj = {
+                "Id": Id,
+                "QuestionId": @Model.wizardIds.QuestionId
+            };
+            
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("DeleteAnswer", "Certifications")',
+                    data: Delobj,
+                    success: function () {
+                        console.log('Success');
+                        var DBCall = '&v=' + Math.random();
+                        $('#AnswersStep').load("/Certifications/_Answer?Id=" + Delobj.QuestionId + DBCall);
+                    },
+                    error: function (err) {
+                        console.log(err);
+                    }
+                });
+            
+        }
+
+        function AnswerSaveClick() {
+            try {
+
+                var obj = {
+                    "id": AnswNo,
+                    "Name": $('#txtNameAnswer').val(),
+                    "Description": CKEDITOR.instances.txtDescAnswer.getData(),
+                    "Correct": $('#chkCorrectAnswer:checked').val(),
+                    "QuestionId": @Model.wizardIds.QuestionId
+                };
+
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("SaveAnswer", "Certifications")',
+                    data: obj,
+                    success: function () {
+
+                        var DBCall = '&v=' + Math.random();
+                        $('#AnswersStep').load("/Certifications/_Answer?Id=" + obj.QuestionId + DBCall);
+
+                        AnswNo = 0;
+                    },
+                    error: function (err) {
+                        console.log(err);
+                    }
+                });
+
+            } catch (e) {
+                console.log(e);
+            }
+
+    }
+
+    function AddExistingAnswers()
+        {
+            $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("AddExistingAnswers", "Certifications")',
+                    data: { "AnswerIds": $('select#ExistingAnswers').val(), "CurrentQuestion": @Model.wizardIds.QuestionId },
+                    success: function () {
+                        var DBCall = '&v=' + Math.random();
+                         $('#AnswersStep').load("/Certifications/_Answer?Id=" + @Model.wizardIds.QuestionId + DBCall);
+                    },
+                    error: function (err) {
+                        console.log(err);
+                    }
+                });
+        }
+
+        $(document).ready(function () {
+            setTimeout(function () {
+                $('.multiselect-full-featured').multiselect({
+                    onChange: function () {
+                        $.uniform.update();
+                    }
+                });
+            }, 500)
+        })
+</script>
