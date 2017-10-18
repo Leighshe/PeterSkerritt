@@ -19,7 +19,7 @@
                 <!-- Simple login form -->
                @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
                 {
-                    tml.AntiForgeryToken()
+                    @Html.AntiForgeryToken()
 
                     <div class="panel panel-body login-form" style="border-color: #222222">
                         <div class="text-center">
