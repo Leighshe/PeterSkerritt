@@ -450,3 +450,7 @@ C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-
 C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\obj\Debug\PeterSkerrittELearning.dll
 C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\obj\Debug\PeterSkerrittELearning.pdb
 C:\Users\M6\Source\Workspaces\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\obj\Debug\PeterSkerrittELearning.csproj.CoreCompileInputs.cache
+C:\Users\khonology\source\repos\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\obj\Debug\PeterSkerrittELearning.csprojResolveAssemblyReference.cache
+C:\Users\khonology\source\repos\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\obj\Debug\PeterSkerrittELearning.csproj.CoreCompileInputs.cache
+C:\Users\khonology\source\repos\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\obj\Debug\PeterSkerrittELearning.dll
+C:\Users\khonology\source\repos\Projects\PeterSkerritt\PeterSkerrittELearning-pre-dev-branch\PeterSkerrittELearning\obj\Debug\PeterSkerrittELearning.pdb
